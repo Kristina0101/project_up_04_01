@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>Конвертер валют</h1>
+    <form action="/convert" method="get">
+        <label>Из:</label>
+        <select name="fromCurrency">
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+            <option value="GBP">GBP</option>
+            <option value="JPY">JPY</option>
+            <option value="RUB">RUB</option>
+        </select>
+        <label>В:</label>
+        <select name="toCurrency">
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+            <option value="GBP">GBP</option>
+            <option value="JPY">JPY</option>
+            <option value="RUB">RUB</option>
+        </select>
+        <input type="number" name="amount" placeholder="Сумма" required>
+        <input type="submit" value="Конвертировать">
+    </form>
+</body>
+</html>
